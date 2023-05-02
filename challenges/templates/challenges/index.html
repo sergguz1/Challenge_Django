@@ -2,8 +2,8 @@
 {% load static %}
 
 {% block css_files %}
-    <link rel="stylesheet" href="{% static 'challenges/index.css' %}">
-    <link rel="stylesheet" href="{% static 'challenges/includes/header.css' %}">
+    <link rel="stylesheet" href="{% static '/challenges/index.css' %}">
+    <link rel="stylesheet" href="{% static '/challenges/includes/header.css' %}">
 {% endblock %}
 
 {% block page_title %}
@@ -12,7 +12,7 @@ All Challenges
 
 {% block content %}
 
-    {% include "challenges/includes/header.html" with active_page="index" %}
+    {% include "/challenges/includes/header.html" with active_page="index" %}
 
     <ul>
         {% for month in months%}
